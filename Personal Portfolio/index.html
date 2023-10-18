@@ -2,228 +2,286 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush's Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piyush's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(14, 14, 61);
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(14, 14, 61);
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
 
-        nav ul li a:hover {
-            color: rgb(131, 131, 223);
-        }
+    nav ul li a:hover {
+      color: rgb(131, 131, 223);
+    }
 
-        main hr {
-            border: 0;
-            background-color: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
-        }
+    main hr {
+      border: 0;
+      background-color: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
 
-        .left {
-            font-size: 1.5rem;
-        }
+    .left {
+      font-size: 1.5rem;
+    }
 
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 130px 0;
 
-        }
+    }
 
-        .firstsection>div {
-            width: 30%;
-        }
+    .firstsection>div {
+      width: 30%;
+    }
 
-        .leftsection {
-            font-size: 2.5rem;
-        }
+    .leftsection {
+      font-size: 2.5rem;
+    }
 
-        .rightsection img {
-            width: 80%;
-        }
+    .leftsection .btn {
+      padding: 50 0px;
+    }
 
-        .purple {
-            color: rgb(170, 112, 224);
-        }
+    .leftsection .btn {
+      padding: 12px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
 
-        #element {
-            color: rgb(170, 112, 224);
+    .rightsection img {
+      width: 80%;
+    }
 
-        }
+    .purple {
+      color: rgb(170, 112, 224);
+    }
 
-        .text-gray {
-            color: gray;
-        }
+    #element {
+      color: rgb(170, 112, 224);
 
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
+    }
 
-        .secondsection h1 {
-            font-size: 1.9rem;
-        }
+    .text-gray {
+      color: gray;
+    }
 
-        .secondsection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
 
-        .secondsection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 185px;
-        }
+    .secondsection h1 {
+      font-size: 1.9rem;
+    }
 
-        .imagetop {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
+    .secondsection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
 
-        .verticaltitle {
-            position: relative;
-            top: 75px;
-            width: 150px;
-        }
+    .secondsection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 185px;
+    }
 
-        .verticaldesc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
-    </style>
+    .imagetop {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .verticaltitle {
+      position: relative;
+      top: 75px;
+      width: 150px;
+    }
+
+    .verticaldesc {
+      position: relative;
+      top: 86px;
+      color: gray;
+      width: 150px;
+      font-size: 9px;
+    }
+
+    footer {
+      background-color: #0e0e1a;
+
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 223px;
+    }
+
+    footer .footerrights {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Piyush's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi,My name is <span class="purple">Piyush</span>
-                <div>and I am a passionate </div>
+  <header>
+    <nav>
+      <div class="left">Piyush's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi,My name is <span class="purple">Piyush</span>
+        <div>and I am a passionate </div>
 
-                <span id="element"></span>
-            </div>
-            <div class="rightsection">
-                <img src="header_img.jpg.png" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="secondsection">
-            <span class="text-gray">What I have done So far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="imagetop" src="5072860.png" alt="">
-                    <div class="verticaltitle">
-                        HTML Developer (2010-2012)
-                    </div>
-                    <div class="verticaldesc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
-                        excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
-                        dolorum sunt ducimus distinctio ipsam harum totam eaque.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="imagetop" src="5072860.png" alt="">
-                    <div class="verticaltitle">
-                        Node.js Developer (2012-2014)
-                    </div>
-                    <div class="verticaldesc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
-                        excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
-                        dolorum sunt ducimus distinctio ipsam harum totam eaque.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="imagetop" src="5072860.png" alt="">
-                    <div class="verticaltitle">
-                        HTML Developer (2010-2012)
-                    </div>
-                    <div class="verticaldesc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
-                        excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
-                        dolorum sunt ducimus distinctio ipsam harum totam eaque.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="imagetop" src="5072860.png" alt="">
-                    <div class="verticaltitle">
-                        HTML Developer (2010-2012)
-                    </div>
-                    <div class="verticaldesc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
-                        excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
-                        dolorum sunt ducimus distinctio ipsam harum totam eaque.
-                    </div>
-                </div>
-            </div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn"> Visit Github</button>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="header_img.jpg.png" alt="">
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <span class="text-gray">What I have done So far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="imagetop" src="5072860.png" alt="">
+          <div class="verticaltitle">
+            Front End Developer (2020-2021)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
+            excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
+            dolorum sunt ducimus distinctio ipsam harum totam eaque.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="imagetop" src="5072860.png" alt="">
+          <div class="verticaltitle">
+            Back End Developer (2021-2022)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
+            excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
+            dolorum sunt ducimus distinctio ipsam harum totam eaque.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="imagetop" src="5072860.png" alt="">
+          <div class="verticaltitle">
+            Graphic Designer (2022-Present)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In unde natus similique sapiente
+            excepturi quam perspiciatis architecto laudantium assumenda eligendi officiis, cupiditate
+            dolorum sunt ducimus distinctio ipsam harum totam eaque.
+          </div>
+        </div>
 
-            </div>
-        </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: [' Front End Developer', 'Back End Developer', 'Graphic Designer'],
-            typeSpeed: 50,
-        });
-    </script>
+      </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footerfirst">
+        <h3>Contact Me</h3>
+      </div>
+      <div class="footersecond">
+        
+      </div>
+      <div class="footerthird">
+        <ul>
+          <li>Email: piyushsoni@gmail.com</li>
+          <li>Cotact No: +91 7531076751</li>
+          <li>Instagram: <a href="">soni_0042</a></li>
+          <li>LinkedIn  : <a href="https://www.linkedin.com/in/piyush-soni-24a9ba240">Link</a></li>
+        </ul>
+      </div>
+
+      <div class="footerfourth">
+        
+      </div>
+    </div>
+    <div class="footerrights">
+      Copyright &#169;piyushsportfolio.com | All rights reserved</div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [' Front End Developer', 'Back End Developer', 'Graphic Designer'],
+      typeSpeed: 50,
+    });
+  </script>
 
 
 </body>
